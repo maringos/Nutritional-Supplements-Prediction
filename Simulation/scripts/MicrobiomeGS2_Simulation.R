@@ -24,6 +24,9 @@ for (k in 2:length(colnames(JOIN.BIO_biolog))) {
   
 }
 
+#save data frame for the supplementary file S1
+write.table(JOIN.BIO_biolog, "S1MGS2.csv", sep = ",", row.names = F)
+
 #EXTRACTING RESULTS 
 #FORMATING
 data.frame.change1 <- data.frame("react_id" = colnames(JOIN.BIO_biolog)[3:196],
