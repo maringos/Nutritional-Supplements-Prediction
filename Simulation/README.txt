@@ -1,0 +1,1 @@
+This folder contains the R scripts and the raw data to replicate the simulations. All details can be found in the manuscript.

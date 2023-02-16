@@ -1,0 +1,40 @@
+compounds,name,maxFlux
+cpd00007,Oxygen,1.82E+01
+cpd00067,Protons,1.00E-03
+cpd00001,Water,1.00E+03
+cpd00254,Magnesium Ion,1.48E+00
+cpd00048,Sulfate Ion,4.23E+00
+cpd00009,Phosphate Ion,2.51E+01
+cpd00205,Potasium,2.56E+01
+cpd00099,Chloride,5.27E+01
+cpd00063,Calcium,1.76E+00
+cpd00971,Sodium,5.82E+01
+cpd00160,Cholesterol,1.29E-02
+cpd10515,Fe,3.22E-03
+cpd10516,Fe,3.22E-03
+cpd00035,Alanine,2.58E+00
+cpd00041,Aspartic,9.39E-01
+cpd00132,Asparagine,5.68E-02
+cpd00023,Glutamic,6.88E-01
+cpd00053,Glutamine,6.88E-01
+cpd00033,Glycine,5.30E+00
+cpd00119,Histidine,1.29E-01
+cpd00322,Isoleucine,4.00E-01
+cpd00107,Leucine,7.24E-01
+cpd00039,Lysine,5.81E-01
+cpd00060,Methionine,1.17E-01
+cpd00066,Phenylalanine,4.24E-01
+cpd00129,Proline,1.91E+00
+cpd00054,Serine,3.57E-01
+cpd00161,Threonine,2.31E-01
+cpd00065,Tryptophan,3.67E-02
+cpd00069,Tyrosine,8.28E-02
+cpd00156,Valine,5.98E-01
+cpd00051,Arginine,8.32E-01
+cpd00381,Cystine,0.00E+00
+cpd00149,Cobalt,2.88E-03
+cpd00058,Copper,1.34E-03
+cpd04097,Lead,8.20E-04
+cpd00034,Zinc,2.60E-03
+cpd00209,Nitrate,1.37E-02
+cpd00030,Mangenese,3.09E-03
