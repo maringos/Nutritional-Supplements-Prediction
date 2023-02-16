@@ -10,9 +10,7 @@ NGM$compounds <- paste0(NGM$compounds,"_e0")
 NGM[c(35),3] <- 0.003 #enrich metals
 NGM[c(12,13),3] <- 0.005 #enrich iron
 #MODELS
-pairs <- read.csv("data/pairs.csv",header = T,sep = ",")
 models <- readRDS("data/cembio-20201113_NGM-adapted.RDS")
-models <- models[c(unique(pairs$model1),unique(pairs$model2))]
 reactions <- find.react_al_vec(models) # CANDIDATE COMPOUNDS
 #ORIGINAL SIMULATION BACARENA
 replicates <- 15

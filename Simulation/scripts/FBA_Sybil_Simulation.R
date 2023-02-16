@@ -9,9 +9,7 @@ NGM[c(35),3] <-  0.003  #enrich metals
 NGM[c(12,13),3] <- 0.005 #enrich iron
 
 ##### FIRST PART: SINGLE-MODEL SUPPLEMENTATION #####
-pairs <- read.csv("Simulation/rawdata/data/pairs.csv",header = T,sep = ",")
 models <- readRDS("Simulation/rawdata/data/cembio-20201113_NGM-adapted.RDS")
-models <- models[c(unique(pairs$model1),unique(pairs$model2))]
 models.biomass <- reconstrain.models.biomass(models = models, minerals = NGM)
 checklist <- find.reactions.id.name(models.biomass)
 
