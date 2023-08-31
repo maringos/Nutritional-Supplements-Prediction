@@ -24,7 +24,7 @@ for (k in 2:length(colnames(JOIN.BIO_biolog))) {
   
 }
 
-#save data frame for the supplementary file S1
+#save data frame for the supplementary file S4
 write.table(JOIN.BIO_biolog, "S1MGS2.csv", sep = ",", row.names = F)
 
 #EXTRACTING RESULTS 
