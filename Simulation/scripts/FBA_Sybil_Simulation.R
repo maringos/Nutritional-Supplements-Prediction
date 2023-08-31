@@ -61,7 +61,7 @@ for (r in 1:2) {
   }
 }
 #save data frame for the supplementary file S1
-#write.table(data.frame.change, "S1FBA.csv", sep = ",", row.names = F)
+#write.table(data.frame.change, "S1FBA.csv", sep = ",", row.names = F) #SEE S3 TAB
 data.frame.change <- data.frame.change[which(is.na(data.frame.change[,4]) == F),] # REMOVE ORIGINAL OPTIMISATION
 onlymyb11 <- data.frame.change[which(data.frame.change[,2] > 0.01),] # POSITIVE EFFECT ON MYB11
 onlymyb11 <- onlymyb11[which(onlymyb11[,2] > onlymyb11[,3]),] # EFFECT ON MYB11 GREATER THAN ON MYB71
