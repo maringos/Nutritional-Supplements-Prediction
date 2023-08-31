@@ -12,7 +12,7 @@ NGM[c(12,13),3] <- 0.005 #enrich iron
 #MODELS
 models <- readRDS("data/cembio-20201113_NGM-adapted.RDS")
 reactions <- find.react_al_vec(models) # CANDIDATE COMPOUNDS
-#ORIGINAL SIMULATION BACARENA
+#ORIGINAL PARALLEL SIMULATION BACARENA
 replicates <- 15
 cores <- 15
 cl <- makeCluster(cores, type = "PSOCK")
@@ -21,7 +21,7 @@ clusterEvalQ(cl, sink(paste0("*****", Sys.getpid(), ".txt")))
   simlist <- parLapply(cl, 1:(replicates), function(i){
   library(BacArena)
   library(parallel)
-   
+#BACARENA SIMULATION SETTINGS   
 arena <- Arena(n = 30, m = 30)
     bac1 <- Bac(models[[1]])
   bac2 <- Bac(models[[2]])
@@ -43,6 +43,7 @@ for (j in 1:20) { # EXAMPLE: ADDING REACTIONS FROM 1 TO 20
   simlist <- parLapply(cl, 1:(replicates), function(i){
   library(BacArena)
   library(parallel)
+  #BACARENA SIMULATION SETTINGS   
   arena <- Arena(n = 30, m = 30)
     bac1 <- Bac(models[[1]])
   bac2 <- Bac(models[[2]])
